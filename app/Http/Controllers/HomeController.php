@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    //
+    public function index(){
+        $pagetitle = "Homepage";
+        return view('index',['title'=>$pagetitle]);
+    }
+
+    public function about(){
+        $pagetitle = "About Us";
+        return view('about',['title'=>$pagetitle]);
+    }
+}
